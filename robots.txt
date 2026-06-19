@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mohamed-alhaskir.github.io/alhaskir-website/sitemap.xml
+Sitemap: https://mohamed-alhaskir.github.io/sitemap.xml
