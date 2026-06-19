@@ -33,6 +33,16 @@
     const y = document.getElementById("year");
     if (y) y.textContent = new Date().getFullYear();
 
+    /* Back to top — the #top target is the sticky sidebar, which is always
+       in view, so the browser's default anchor jump does nothing. Scroll
+       the window explicitly instead. */
+    document.querySelectorAll('a[href="#top"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+
     /* ---- Publications from Google Scholar (publications.json) ---- */
     const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) =>
         ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
