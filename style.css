@@ -105,20 +105,16 @@ strong { color: var(--ink); font-weight: 600; }
 .block-title.sub { margin-top: 56px; }
 
 /* ---------- About ---------- */
-.about { display: grid; grid-template-columns: 1fr 200px; gap: 44px; align-items: start; }
+.about { display: block; }
 .about-text p { margin-bottom: 18px; }
 .interests { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 9px; }
 .interests span {
     font-size: 0.83rem; font-weight: 500; color: var(--navy);
     background: var(--accent-soft); padding: 6px 13px; border-radius: 999px;
 }
-.lang-box { border-left: 2px solid var(--line); padding-left: 22px; }
-.lang-box h3 {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--muted); font-weight: 600; margin-bottom: 12px;
-}
-.lang { list-style: none; }
-.lang li { display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.92rem; }
+.lang { list-style: none; max-width: 340px; }
+.lang li { display: flex; justify-content: space-between; padding: 8px 0; font-size: 0.92rem; border-bottom: 1px solid var(--line); }
+.lang li:last-child { border-bottom: 0; }
 .lang span { color: var(--ink); font-weight: 500; }
 .lang em { color: var(--muted); font-style: normal; font-size: 0.85rem; }
 
@@ -222,8 +218,6 @@ strong { color: var(--ink); font-weight: 600; }
     .sidebar { padding: 48px 36px; }
     .sidebar h1 { font-size: 2.1rem; }
     .content { padding: 56px 44px; }
-    .about { grid-template-columns: 1fr; gap: 28px; }
-    .lang-box { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 20px; }
 }
 
 @media (max-width: 720px) {
