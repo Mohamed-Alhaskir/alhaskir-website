@@ -5,9 +5,13 @@ __pycache__/
 .local/
 get-pip.py
 
+# Claude Code local settings
+.claude/
+
 # OS / editor
 .DS_Store
 Thumbs.db
 *.swp
 .vscode/
 .idea/
+README.md

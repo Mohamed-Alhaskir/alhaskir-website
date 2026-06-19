@@ -13,7 +13,7 @@
     --line-soft: #eef0f3;
     --bg: #ffffff;
     --accent-soft: #eef2fb;
-    --sidebar-w: 360px;
+    --sidebar-w: 380px;
     --content-max: 760px;
     --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
@@ -37,7 +37,7 @@ a { color: inherit; }
 strong { color: var(--ink); font-weight: 600; }
 
 /* ---------- Layout shell ---------- */
-.layout { display: flex; align-items: flex-start; max-width: 1280px; margin: 0 auto; }
+.layout { display: flex; align-items: flex-start; max-width: 1700px; margin: 0 auto; }
 
 /* ---------- Sidebar ---------- */
 .sidebar {
@@ -89,7 +89,7 @@ strong { color: var(--ink); font-weight: 600; }
 .btn-primary:hover { background: var(--navy-dark); }
 
 /* ---------- Content ---------- */
-.content { flex: 1 1 auto; min-width: 0; padding: 64px 72px; max-width: calc(var(--content-max) + 144px); }
+.content { flex: 1 1 auto; min-width: 0; padding: 72px 96px; max-width: none; }
 .block { padding: 36px 0; }
 .block:first-child { padding-top: 0; }
 .block-title {
