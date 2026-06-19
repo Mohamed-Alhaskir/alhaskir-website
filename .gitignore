@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.local/
+get-pip.py
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

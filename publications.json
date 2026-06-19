@@ -1,0 +1,63 @@
+{
+  "author": "Mohamed Alhaskir",
+  "profile_url": "https://scholar.google.com/citations?user=ntHtVD8AAAAJ",
+  "updated": "2026-06-19",
+  "publications": [
+    {
+      "title": "The role of self-supervised pretraining in differentially private medical image analysis",
+      "venue": "arXiv preprint arXiv:2601.19618",
+      "year": 2026,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "title": "A Regional Data Space for Urgent and Emergency Care in Germany",
+      "venue": "Studies in health technology and informatics 336, 1167-1171",
+      "year": 2026,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "title": "Reliable detection of focal onset impaired awareness seizures in patients with epilepsy using wearable ECG: Development and validation study",
+      "venue": "Computer Methods and Programs in Biomedicine, 109295",
+      "year": 2026,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "title": "Trans-sectoral patient pathways in urgent and emergency care (TRANSPARENT study): protocol for a prospective, mixed-methods study in Germany",
+      "venue": "BMJ open 16 (2), e114590",
+      "year": 2026,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "title": "Feasibility of LLM-Assisted Communication Feedback in Simulation-Based Medical Education: A Pilot Study",
+      "venue": "Opening the Personal Gate between Technology and Health Care, 2140-2144",
+      "year": 2026,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "title": "Beating the Clock: A Prediction Model for Timely Care in Emergency Departments",
+      "venue": "Digital Health and Informatics Innovations for Sustainable Health Care …",
+      "year": 2024,
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "title": "Spectral fusion of heartbeat and accelerometer data for estimation of breathing rate in wearable patches",
+      "venue": "Caring is Sharing–Exploiting the Value in Data for Health and Innovation …",
+      "year": 2023,
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "title": "ECG matching: an approach to synchronize ECG datasets for data quality comparisons",
+      "venue": "German Medical Data Sciences 2023–Science. Close to People., 225-232",
+      "year": 2023,
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ntHtVD8AAAAJ&citation_for_view=ntHtVD8AAAAJ:d1gkVwhDpl0C"
+    }
+  ]
+}
