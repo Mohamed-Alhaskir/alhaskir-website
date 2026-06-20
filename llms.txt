@@ -1,0 +1,44 @@
+# Mohamed Alhaskir
+
+> Mohamed Alhaskir is a Syrian-German machine learning researcher and engineer, and a PhD candidate at the Institute of Medical Informatics, RWTH Aachen University (Aachen, Germany). His work focuses on trustworthy and multimodal AI for medicine — building reliable, reproducible, and deployable ML systems for high-stakes biomedical settings.
+
+## About
+
+- **Name:** Mohamed Alhaskir
+- **Role:** PhD Candidate in Medical AI · Machine Learning Researcher & Engineer
+- **Affiliation:** Institute of Medical Informatics, RWTH Aachen University, Aachen, Germany
+- **Nationality:** Syrian-German
+- **Website:** https://mohamed-alhaskir.github.io/
+- **Email:** malhaskir@ukaachen.de
+
+## Research focus
+
+- Trustworthy AI (robustness, reproducibility, auditability, evaluation in high-stakes settings)
+- Medical AI and biomedical machine learning
+- Multimodal learning and large language models
+- Dependable, deployable ML systems and reproducible workflows
+- Wearable ECG-based seizure detection and clinical AI evaluation
+
+## Selected publications
+
+- Trustworthy Artificial Intelligence: Seizure Detection by Wearables Following International Consensus Guidelines (Alhaskir, M., et al., 2026, under review)
+- Automated Multimodal Feedback Generation for Pediatric Simulation Training (HaMoJo) (Alhaskir, M., et al., 2026, under review)
+- Reliable Detection of Focal Onset Impaired Awareness Seizures Using Wearable ECG (Alhaskir, M., et al., Computer Methods and Programs in Biomedicine, 2025)
+- ECG Matching: Synchronizing ECG Datasets for Data Quality Comparisons (Alhaskir, M., et al., Studies in Health Technology and Informatics, 2023)
+- The Role of Self-Supervised Pretraining in Differentially Private Medical Image Analysis (co-author, arXiv preprint, 2026)
+
+## Open-source projects
+
+- MoniPy — open-source ML pipeline for wearable ECG-based seizure detection: https://github.com/rwth-imi/monipy
+- HaMoJo — multimodal machine learning system for pediatric simulation training: https://github.com/Mohamed-Alhaskir/HaMoJo
+
+## Profiles
+
+- LinkedIn: https://www.linkedin.com/in/mohamed-alhaskir-20342717a
+- GitHub: https://github.com/Mohamed-Alhaskir
+- Google Scholar: https://scholar.google.com/citations?user=ntHtVD8AAAAJ
+- ORCID: https://orcid.org/0000-0002-9983-1554
+
+## Awards
+
+- DAAD Prize for Outstanding International Students, RWTH Aachen (2021)
