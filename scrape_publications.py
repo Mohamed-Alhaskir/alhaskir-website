@@ -30,12 +30,35 @@ SCHOLAR_ID = "ntHtVD8AAAAJ"
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "publications.json")
 
 
+def _maybe_enable_proxies() -> None:
+    """Best-effort: route scholarly through free proxies.
+
+    Google Scholar blocks datacenter/CI IP ranges, so a direct request from a
+    GitHub Actions runner is almost always refused. Free proxies are slow and
+    unreliable, but they occasionally get through. Enabled when the env var
+    USE_FREE_PROXIES is truthy. Any failure here is non-fatal — we just fall
+    back to a direct request (which then degrades gracefully in main()).
+    """
+    if os.environ.get("USE_FREE_PROXIES", "").lower() not in ("1", "true", "yes"):
+        return
+    try:
+        from scholarly import scholarly, ProxyGenerator
+        pg = ProxyGenerator()
+        if pg.FreeProxies():
+            scholarly.use_proxy(pg)
+            print("Using free proxies for Google Scholar requests.")
+    except Exception as exc:  # noqa: BLE001 - best effort only
+        print(f"Could not set up proxies ({exc}); continuing without them.")
+
+
 def fetch(scholar_id: str) -> dict:
     """Return a dict ready to serialize to publications.json."""
     try:
         from scholarly import scholarly
     except ImportError:
         sys.exit("Missing dependency. Run:  pip install -r requirements.txt")
+
+    _maybe_enable_proxies()
 
     author = scholarly.search_author_id(scholar_id)
     # Only fill the publications section to minimize requests (less blocking).
@@ -87,7 +110,19 @@ def main() -> None:
         sys.exit("No Scholar ID set. Edit SCHOLAR_ID in this file, pass --id, "
                  "or set the SCHOLAR_ID environment variable.")
 
-    data = fetch(args.scholar_id)
+    try:
+        data = fetch(args.scholar_id)
+    except Exception as exc:  # noqa: BLE001 - Scholar blocks/rate-limits are expected
+        # Don't fail the build. The site keeps serving the last good
+        # publications.json (or the static fallback list in index.html).
+        print(f"WARNING: could not fetch from Google Scholar ({exc}).")
+        print("Keeping the existing publications.json unchanged.")
+        return
+
+    if not data["publications"]:
+        print("WARNING: Scholar returned no publications; keeping existing file.")
+        return
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 

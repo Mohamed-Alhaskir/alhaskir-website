@@ -27,6 +27,10 @@ jobs:
           # Set this in: repo Settings → Secrets and variables → Actions → Variables
           # (name: SCHOLAR_ID). Falls back to the value hard-coded in the script.
           SCHOLAR_ID: ${{ vars.SCHOLAR_ID }}
+          # Scholar blocks CI/datacenter IPs; route through free proxies for a
+          # chance of succeeding. If it still fails, the script exits cleanly and
+          # keeps the last good publications.json (the build does not fail).
+          USE_FREE_PROXIES: "1"
         run: python scrape_publications.py
 
       - name: Commit changes if publications changed
