@@ -40,7 +40,10 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add publications.json
             git commit -m "chore: update publications from Google Scholar"
-            git push
+            # The remote may have advanced since checkout; rebase our single
+            # commit on top of it, then push, to avoid non-fast-forward rejects.
+            git pull --rebase --autostash origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           else
             echo "No changes to publications.json."
           fi
