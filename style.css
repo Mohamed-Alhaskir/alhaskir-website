@@ -47,6 +47,12 @@ strong { color: var(--ink); font-weight: 600; }
     border-right: 1px solid var(--line);
 }
 .sidebar-inner { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+.avatar {
+    width: 132px; height: 132px; border-radius: 50%;
+    object-fit: cover; object-position: center 12%;
+    display: block; margin-bottom: 26px;
+    box-shadow: 0 0 0 1px var(--line);
+}
 .eyebrow {
     text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.74rem;
     font-weight: 600; color: var(--navy); margin-bottom: 16px;
