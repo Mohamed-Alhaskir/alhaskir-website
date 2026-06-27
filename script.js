@@ -9,9 +9,12 @@
     const spy = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                sideLinks.forEach((a) => a.classList.remove("active"));
+                sideLinks.forEach((a) => {
+                    a.classList.remove("active");
+                    a.removeAttribute("aria-current");
+                });
                 const a = byId.get(entry.target.id);
-                if (a) a.classList.add("active");
+                if (a) { a.classList.add("active"); a.setAttribute("aria-current", "page"); }
             }
         });
     }, { rootMargin: "-30% 0px -60% 0px" });
@@ -42,6 +45,25 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     });
+
+    /* Mobile nav toggle */
+    const navToggle = document.querySelector(".nav-toggle");
+    if (navToggle) {
+        const closeNav = () => {
+            document.body.classList.remove("nav-open");
+            navToggle.setAttribute("aria-expanded", "false");
+        };
+        navToggle.addEventListener("click", () => {
+            const open = document.body.classList.toggle("nav-open");
+            navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        // Close after tapping a nav link
+        sideLinks.forEach((a) => a.addEventListener("click", closeNav));
+        // Close on Escape
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && document.body.classList.contains("nav-open")) closeNav();
+        });
+    }
 
     /* ---- Publications from Google Scholar (publications.json) ---- */
     const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) =>

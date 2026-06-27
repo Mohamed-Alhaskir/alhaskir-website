@@ -21,9 +21,7 @@
 
 ## Selected publications
 
-- Trustworthy Artificial Intelligence: Seizure Detection by Wearables Following International Consensus Guidelines (Alhaskir, M., et al., 2026, under review)
-- Automated Multimodal Feedback Generation for Pediatric Simulation Training (HaMoJo) (Alhaskir, M., et al., 2026, under review)
-- Reliable Detection of Focal Onset Impaired Awareness Seizures Using Wearable ECG (Alhaskir, M., et al., Computer Methods and Programs in Biomedicine, 2025)
+- Reliable Detection of Focal Onset Impaired Awareness Seizures Using Wearable ECG (Alhaskir, M., et al., Computer Methods and Programs in Biomedicine, 2026)
 - ECG Matching: Synchronizing ECG Datasets for Data Quality Comparisons (Alhaskir, M., et al., Studies in Health Technology and Informatics, 2023)
 - The Role of Self-Supervised Pretraining in Differentially Private Medical Image Analysis (co-author, arXiv preprint, 2026)
 
