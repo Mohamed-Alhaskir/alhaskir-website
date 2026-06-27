@@ -197,6 +197,7 @@ strong { color: var(--ink); font-weight: 600; }
 .legal .back:hover { text-decoration: underline; text-underline-offset: 3px; }
 .legal h1 { font-family: var(--font-serif); font-weight: 600; color: var(--ink); font-size: 2.2rem; letter-spacing: -0.01em; margin-bottom: 28px; }
 .legal h2 { font-size: 1.02rem; font-weight: 600; color: var(--ink); margin: 28px 0 8px; }
+.legal h2#datenschutz { font-family: var(--font-serif); font-size: 2.2rem; letter-spacing: -0.01em; margin: 0 0 28px; }
 .legal p { color: var(--body); margin-bottom: 10px; }
 .legal a { color: var(--navy); }
 .legal .small { font-size: 0.88rem; color: var(--muted); margin-top: 40px; }

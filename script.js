@@ -47,26 +47,10 @@
     const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) =>
         ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-    /* Fisher–Yates shuffle (returns a new array) */
-    const shuffled = (arr) => {
-        const a = arr.slice();
-        for (let i = a.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [a[i], a[j]] = [a[j], a[i]];
-        }
-        return a;
-    };
-
-    /* Randomize the order of an existing list's <li> children in place */
-    const shuffleListItems = (el) => {
-        if (!el) return;
-        shuffled(Array.from(el.children)).forEach((li) => el.appendChild(li));
-    };
-
     const renderPubs = (data) => {
         const list = document.getElementById("pubs");
         const note = document.getElementById("pubsNote");
-        const pubs = shuffled((data && data.publications) || []);
+        const pubs = (data && data.publications) || [];
         if (!list || !pubs.length) return; // keep built-in fallback list
 
         list.innerHTML = pubs.map((p) => {
@@ -94,9 +78,6 @@
 
     fetch("publications.json", { cache: "no-store" })
         .then((r) => (r.ok ? r.json() : null))
-        .then((data) => {
-            if (data) renderPubs(data);                       // JSON list (shuffled in renderPubs)
-            else shuffleListItems(document.getElementById("pubs")); // shuffle fallback list
-        })
-        .catch(() => shuffleListItems(document.getElementById("pubs")));
+        .then((data) => { if (data) renderPubs(data); })
+        .catch(() => {});
 })();
