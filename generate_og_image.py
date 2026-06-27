@@ -24,7 +24,7 @@ d.rectangle([0, 0, 12, H], fill=NAVY)
 
 # Eyebrow
 eyebrow = ImageFont.truetype(SANS_BOLD, 28)
-d.text((80, 110), "PHD CANDIDATE  ·  MEDICAL AI", font=eyebrow, fill=NAVY)
+d.text((80, 110), "PHD CANDIDATE  ·  MULTIMODAL AI FOR MEDICINE", font=eyebrow, fill=NAVY)
 
 # Name (large serif)
 name = ImageFont.truetype(SERIF, 96)
@@ -33,10 +33,10 @@ d.text((80, 170), "Mohamed Alhaskir", font=name, fill=INK)
 # Tagline
 tag = ImageFont.truetype(SANS, 36)
 d.text((80, 330),
-       "Machine learning researcher & engineer building",
+       "Building multimodal, LLM-powered AI for medicine —",
        font=tag, fill=INK)
 d.text((80, 380),
-       "robust, deployable AI for biomedical data.",
+       "trustworthy, privacy-preserving, clinically deployable.",
        font=tag, fill=INK)
 
 # Footer URL

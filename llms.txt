@@ -1,11 +1,11 @@
 # Mohamed Alhaskir
 
-> Mohamed Alhaskir is a Syrian-German machine learning researcher and engineer, and a PhD candidate at the Institute of Medical Informatics, RWTH Aachen University (Aachen, Germany). His work focuses on trustworthy and multimodal AI for medicine — building reliable, reproducible, and deployable ML systems for high-stakes biomedical settings.
+> Mohamed Alhaskir is a Syrian-German machine learning researcher and engineer, and a PhD candidate at the Institute of Medical Informatics, RWTH Aachen University (Aachen, Germany). His research focuses on multimodal, LLM-powered AI for medicine — building trustworthy, privacy-preserving, and clinically deployable systems.
 
 ## About
 
 - **Name:** Mohamed Alhaskir
-- **Role:** PhD Candidate in Medical AI · Machine Learning Researcher & Engineer
+- **Role:** PhD Candidate · Multimodal AI for Medicine · Machine Learning Researcher
 - **Affiliation:** Institute of Medical Informatics, RWTH Aachen University, Aachen, Germany
 - **Nationality:** Syrian-German
 - **Website:** https://mohamed-alhaskir.github.io/
@@ -13,11 +13,11 @@
 
 ## Research focus
 
-- Trustworthy AI (robustness, reproducibility, auditability, evaluation in high-stakes settings)
-- Medical AI and biomedical machine learning
-- Multimodal learning and large language models
-- Dependable, deployable ML systems and reproducible workflows
-- Wearable ECG-based seizure detection and clinical AI evaluation
+- Multimodal large language models and generative AI for medicine
+- Trustworthy AI in clinical settings (robustness, reproducibility, auditability)
+- Privacy-preserving machine learning for sensitive medical data
+- Dependable, deployable clinical AI systems and reproducible workflows
+- Clinical AI evaluation and biosignal processing
 
 ## Selected publications
 
@@ -27,8 +27,8 @@
 
 ## Open-source projects
 
-- MoniPy — open-source ML pipeline for wearable ECG-based seizure detection: https://github.com/rwth-imi/monipy
-- HaMoJo — multimodal machine learning system for pediatric simulation training: https://github.com/Mohamed-Alhaskir/HaMoJo
+- HaMoJo — multimodal LLM-powered system for clinical skills assessment in pediatric simulation training: https://github.com/Mohamed-Alhaskir/HaMoJo
+- MoniPy — open-source ML pipeline used as a framework for trustworthy clinical-AI research on biosignal data: https://github.com/rwth-imi/monipy
 
 ## Profiles
 
